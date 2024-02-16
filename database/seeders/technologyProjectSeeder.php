@@ -16,6 +16,6 @@ class ProjectTechnologySeeder extends Seeder {
         
         foreach($projects as $project) {             
         $project->technologies()->sync($faker->randomElements($technologyIds, rand(1,3), true));
-        }     
-    } 
-}  
+        }
+    }
+}

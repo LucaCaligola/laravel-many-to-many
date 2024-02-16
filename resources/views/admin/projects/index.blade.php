@@ -45,7 +45,11 @@
                             <td>
                                 {{ $project->languages }}
                             </td>
-                           
+
+                            {{-- <td>
+                                {{  }}
+                            </td>
+                            --}}
                         
                                 <td>
                                     <div class="d-flex justify-space-between">
