@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('project_technology', function (Blueprint $table) {
 
-            $table->unsignedBigInteger('thechnology_id');
+            $table->unsignedBigInteger('technology_id');
             $table->foreign('technology_id')->references('id')->on('technologies')->cascadeOnDelete();
 
             $table->unsignedBigInteger('project_id');
             $table->foreign('project_id')->references('id')->on('projects')->cascadeOnDelete();
 
-            $table->primary(['thechnology_id', 'project_id']);
+            $table->primary(['technology_id', 'project_id']);
              
             $table->timestamps();
         });
