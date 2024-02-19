@@ -25,6 +25,10 @@
                 Link al progetto: {{ $project->project_url}}
             </p>
             <p>
+                Stack: {{ $project->type->name }}
+            </p>
+
+            <p>
                 Linguaggi: {{ $project->languages}}
             </p>
          

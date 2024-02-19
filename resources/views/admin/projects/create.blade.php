@@ -45,6 +45,16 @@
                         <input type="string" name="languages" id="project_url" class="form-control">
                     </div>
 
+                   <div class="mb-3">
+                        <select for="type_id" class="form-label"
+                            type="string" name="type_id" id="type_id" class="form-control">
+                            @foreach ($types as $type)
+                            
+                            <option value="{{ $type->id }}"> {{ $type->name }}</option>
+                            @endforeach
+                        </select>
+                   </div>
+
                     
 
                     <button type="submit" class="btn btn-primary">Crea nuovo progetto</button>

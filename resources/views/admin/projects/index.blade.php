@@ -18,7 +18,6 @@
                         <th scope="col">Description</th>
                         <th scope="col">Date</th>
                         <th scope="col">Project Url</th>
-                        <th scope="col">Languages</th>
                         <th scope="col">Actions</th>
                         <th scope="col">Type</th>
                     </tr>
@@ -42,9 +41,7 @@
                                 {{ $project->project_url }}
                             </td>
 
-                            <td>
-                                {{ $project->languages }}
-                            </td>
+                        
 
                             {{-- <td>
                                 {{  }}
