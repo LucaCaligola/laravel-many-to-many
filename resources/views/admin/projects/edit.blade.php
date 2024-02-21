@@ -10,8 +10,9 @@
                 <h1 class="title mb-4 pt-3">
                    Modifica un progetto
                 </h1>
-                <form action="{{ route('admin.projects.store') }}" method="POST" >
+                <form action="{{ route('admin.projects.update', $project) }}" method="POST">
                     @csrf
+                    @method('PUT')
 
                     <div class="mb-3">
                         <label for="title"class="form-label">
